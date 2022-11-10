@@ -21,7 +21,7 @@ function Home(){
                <Carousel.Item>
                 <Link to="/women"><img
               className="itemimage"
-              src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-new/subhome-xmedia-45//w/808/IMAGE-portrait-ipad-default-fill-edb4d83d-fc32-4ded-b32f-d425f2d5353a-default_0.jpg?ts=1667838067556"
+              src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-best-sellers/subhome-xmedia-38//w/1366/IMAGE-landscape-fill-c68605f6-1f94-4830-8f4a-0f3bf22017e2-default_0.jpg?ts=1663579002306"
               alt="First slide"
             /></Link>
                 </Carousel.Item>
