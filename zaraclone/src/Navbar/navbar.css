@@ -1,0 +1,39 @@
+.nav_container{
+    display: flex;
+    background-color:skyblue;
+    justify-content: space-between;
+    z-index: 2px;
+    /* position: fixed; */
+    top: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    align-items: center;
+    /* opacity: 0; */
+    height: 64px;
+    
+}
+.nav_left{
+    display: flex;
+}
+.menudiv{
+  width: 35px;
+  height: 5px;
+  margin:5px;
+  background-color: black;
+}
+.logo{
+    margin-left: 20px;
+}
+.nav_right{
+    display: flex;
+}
+.search{
+    border:none;
+    border-bottom: 2px solid black;
+    margin-right: 60px;
+
+}
+.btn1{
+    background-color:transparent;
+    border-color:transparent;
+}
