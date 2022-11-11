@@ -3,11 +3,7 @@
     height: 50%;
     
   } */
-.homepage{
-    background-color: yellow;
-    /* margin-top: 30px; */
-    /* z-index: -10px; */
-} 
+
 /* .carosal-container-item{
     border: 1px solid yellow;
     height: 20%;
@@ -15,4 +11,11 @@
 .itemimage{
     width:100%;
     height:750px;
+}
+.testimonial-carousel .carousel-control::hover {
+    color: red;
+}
+
+.testimonial-carousel .carousel-control::after {
+    color: red;
 }

@@ -2,6 +2,7 @@
 
 import "./navbar.css"
 import {Link} from "react-router-dom"
+import { HStack } from "@chakra-ui/layout"
 // import {Link} from "rea"
 
 
@@ -9,7 +10,7 @@ function Navbar(){
 
     return(
         
-          <div className="nav_container">
+          <HStack className="nav_container">
             <div className="nav_left">
                 <button >
                 <div className="menudiv"></div>
@@ -37,7 +38,7 @@ function Navbar(){
                 </div>
             </div>
 
-          </div>
+          </HStack>
           
         
     )

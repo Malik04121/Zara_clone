@@ -3,20 +3,22 @@ import { useEffect } from "react"
 import { useState } from "react"
 import { useParams } from "react-router"
 import { Box,Flex,Text,Button } from '@chakra-ui/react'
-
+// import { useDisclosure } from "@chakra-ui/react";
 
 function Product(){
   const {id}=useParams()
+  const {para}=useParams()
   const [data,setData]=useState({})
+  // const { isOpen, onOpen, onClose } = useDisclosure()
 
  useEffect(()=>{
-     axios.get(`https://lit-crag-43080.herokuapp.com/api/men/${id}`)
+     axios.get(`https://lit-crag-43080.herokuapp.com/api/${para}/${id}`)
      .then((res)=>setData(res.data))
  },[])
   console.log(data.pcost)
     return(
       <Box>
-        <Box mt="84px" alignItems="center" ml="5%" className="scrolldetails">
+        <Box mt="84px" alignItems="center" ml="15%" className="scrolldetails">
           <Flex direction={["column", "row", "row"]} gap={80}>
           <Box width="25%" mt="10%">
             <Text>MATERIALS, CARE AND ORIGIN </Text>
@@ -130,9 +132,9 @@ function Product(){
                 bg="black"
                 color="white"
                 mt={8}
-                // onClick={() => {
-                //   onOpen();
-                // }}
+                onClick={() => {
+                  alert("item added to cart successfully")
+                }}
               >
                 Add to Bag
               </Button>
@@ -143,6 +145,7 @@ function Product(){
             </Text>
           </Box>
           </Flex>
+         
 
         </Box>
       </Box>

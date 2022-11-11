@@ -1,11 +1,13 @@
 .nav_container{
     display: flex;
-    background-color:skyblue;
+    background-color:transparent;
     justify-content: space-between;
-    z-index: 2px;
-    /* position: fixed; */
-    top: 10px;
-    margin-top: 5px;
+    z-index: 20;
+    position: fixed;
+    top:10px;
+    width:100%;
+    margin:auto;
+    /* margin-top: 5px; */
     padding: 5px;
     align-items: center;
     /* opacity: 0; */
