@@ -15,6 +15,14 @@ function Product(){
      axios.get(`https://lit-crag-43080.herokuapp.com/api/${para}/${id}`)
      .then((res)=>setData(res.data))
  },[])
+
+ const addproduct=()=>{
+  alert("Item added to cart")
+   axios.post(`https://lit-crag-43080.herokuapp.com/api/cart`,data)
+   .then((res)=>console.log(res.data))
+   
+ }
+
   console.log(data.pcost)
     return(
       <Box>
@@ -132,9 +140,7 @@ function Product(){
                 bg="black"
                 color="white"
                 mt={8}
-                onClick={() => {
-                  alert("item added to cart successfully")
-                }}
+                onClick={addproduct}
               >
                 Add to Bag
               </Button>

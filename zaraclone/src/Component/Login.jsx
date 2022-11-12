@@ -3,6 +3,7 @@ import axios from "axios"
 import { useContext } from "react"
 import { useEffect } from "react"
 import { useState } from "react"
+import { Container } from "react-bootstrap"
 import {Link} from "react-router-dom"
 import { AuthContext } from "../Context/AuthContext"
 
@@ -33,18 +34,18 @@ function Login(){
     }
    
     return(
-        <>
-        <Box mt={200} ml="10%">
-            <Flex gap={200}>
+    
+        <Box mt="200px" ml="10%">
+            <Flex gap={200} >
                 <Box width="15%">
                     <Text fontSize="4xl" fontWeight="700" textAlign="left">Login</Text>
                     
                         {/* <Text fontSize="md" fontWeight="600" textAlign="left">Email</Text> */}
-                        <Input name="email" value={login.email} onChange={handlechange}  width="100%" textAlign="left" border="none" borderBottom="1px solid black" mt={5} placeholder="enter email" type="email"/>
+                        <Input name="email" value={login.email} onChange={handlechange}  width="100%" textAlign="left" borderRadius={0} border="none" borderBottom="1px solid black" mt={5} placeholder="enter email" type="email"/>
                     
                     
                         {/* <Text fontSize="md" fontWeight="600" textAlign="left" mt={10}>Password</Text> */}
-                        <Input name="password" onChange={handlechange} value={login.password} width="100%" border="none" borderBottom="1px solid black" mt={8} placeholder="enter password" type="password"/>
+                        <Input name="password" onChange={handlechange} value={login.password} width="100%" border="none" borderRadius="0" borderBottom="1px solid black" mt={8} placeholder="enter password" type="password"/>
                         <Text textAlign="left" fontSize="xs" fontWeight="10" mt={5}>Forgot Password</Text>
                 
                     <Box>
@@ -70,12 +71,15 @@ function Login(){
                 </Box>
 
             </Flex>
-            <Text>
+            
+             <Text>
 
             </Text>
         </Box>
+    
         
-        </>
+        
+        
     )
 
 }
