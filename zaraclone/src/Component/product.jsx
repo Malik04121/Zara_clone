@@ -2,7 +2,7 @@ import axios from "axios"
 import { useEffect } from "react"
 import { useState } from "react"
 import { useParams } from "react-router"
-import { Box,Flex,Text,Button } from '@chakra-ui/react'
+import { Box,Flex,Text,Button,Image } from '@chakra-ui/react'
 // import { useDisclosure } from "@chakra-ui/react";
 
 function Product(){
@@ -18,8 +18,8 @@ function Product(){
   console.log(data.pcost)
     return(
       <Box>
-        <Box mt="84px" alignItems="center" ml="15%" className="scrolldetails">
-          <Flex direction={["column", "row", "row"]} gap={80}>
+        <Box mt="84px" alignItems="center" ml="10%" className="scrolldetails">
+          <Flex direction={["column", "row", "row"]} gap={40}>
           <Box width="25%" mt="10%">
             <Text>MATERIALS, CARE AND ORIGIN </Text>
             <Text mt={8}>ORIGIN</Text>
@@ -54,9 +54,9 @@ function Product(){
             </Text>
           </Box>
           <Box  >
-            <img height="550px" src={data.imgUrl} alt="" />
+            <Image height="600px" src={data.imgUrl} alt="" />
           </Box>
-          <Box width="20%" ml="10%">
+          <Box width="25%" >
             <Text mt={8}>{data.prod_name}</Text>
             <Text
               style={{ maxHeight: "20%", overflow: "auto" }}
@@ -70,7 +70,7 @@ function Product(){
             <Text>Mrp included of all tax</Text>
             <hr></hr>
 
-            <Box mt={8} justifyContent="flex-start" borderTop="1px" borderBottom="1px" borderColor="black">
+            <Box mt={8} mr="2%" justifyContent="flex-start" borderTop="1px" borderBottom="1px" borderColor="black">
               <Text
                 justifyContent="flex-start"
                 fontSize="xs"

@@ -10,7 +10,7 @@ function Navbar(){
 
     return(
         
-          <HStack className="nav_container">
+          <div className="nav_container">
             <div className="nav_left">
                 <button >
                 <div className="menudiv"></div>
@@ -38,7 +38,7 @@ function Navbar(){
                 </div>
             </div>
 
-          </HStack>
+          </div>
           
         
     )

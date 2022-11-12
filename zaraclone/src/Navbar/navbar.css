@@ -7,7 +7,7 @@
     top:10px;
     width:100%;
     margin:auto;
-    /* margin-top: 5px; */
+    margin-top: 5px;
     padding: 5px;
     align-items: center;
     /* opacity: 0; */
@@ -38,4 +38,7 @@
 .btn1{
     background-color:transparent;
     border-color:transparent;
+}
+.right2{
+    justify-content: space-between;
 }
