@@ -6,6 +6,10 @@ import Menpage from "./mens"
 import Product from "./product"
 import Childpage from "./children"
 import Signup from "./Sigup"
+import Cart from "./cart"
+import PrivateRoute from "./PrivateRoute"
+import Checkout from "./checkout"
+import Search from "./search"
 
 function Allroutes(){
 
@@ -19,6 +23,10 @@ function Allroutes(){
             <Route path="/:para/:id" element={<Product/>}/>
             <Route path="/women" element={<Womenpage/>}/>
             <Route path="/kids" element={<Childpage/>}/>
+            <Route path="/cart" element={<Cart/>}/>
+            <Route path="/search" element={<Search/>}/>
+            <Route path="/checkout" element={<PrivateRoute><Checkout/></PrivateRoute>}/>
+            
         </Routes>
         </>
     )
