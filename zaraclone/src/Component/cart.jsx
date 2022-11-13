@@ -18,7 +18,7 @@ function Cart(){
         <Grid>
         <Box>
            <Box>
-              
+              <Text></Text>
            </Box>
         </Box>
         </Grid>
