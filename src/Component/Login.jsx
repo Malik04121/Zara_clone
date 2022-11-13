@@ -4,7 +4,7 @@ import { useContext } from "react"
 import { useEffect } from "react"
 import { useState } from "react"
 import { Container } from "react-bootstrap"
-import {Link} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 import { AuthContext } from "../Context/AuthContext"
 
 
@@ -14,6 +14,7 @@ function Login(){
 
     const [data,setData]=useState([])
     const [login,setLogin]=useState({"email":"","password":""})
+    const navigate=useNavigate()
 
     useEffect(()=>{
     axios.get(`https://lit-crag-43080.herokuapp.com/api/userdata`)
@@ -29,7 +30,10 @@ function Login(){
         ele.email==login.email && ele.password==login.password
        ))
        setLogindata(ldata)
+       console.log(ldata)
+       alert("User is successfully login")
        setLogin({email:"", password:""})
+       navigate("/")
        
     }
    
@@ -37,7 +41,7 @@ function Login(){
     
         <Box mt="200px" ml="10%">
             <Flex gap={200} >
-                <Box width="15%">
+                <Box width="20%">
                     <Text fontSize="4xl" fontWeight="700" textAlign="left">Login</Text>
                     
                         {/* <Text fontSize="md" fontWeight="600" textAlign="left">Email</Text> */}

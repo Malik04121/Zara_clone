@@ -1,14 +1,16 @@
 import axios from "axios"
-import { useEffect } from "react"
+import { useContext, useEffect } from "react"
 import { useState } from "react"
 import { useParams } from "react-router"
 import { Box,Flex,Text,Button,Image } from '@chakra-ui/react'
+import { AuthContext } from "../Context/AuthContext"
 // import { useDisclosure } from "@chakra-ui/react";
 
 function Product(){
   const {id}=useParams()
   const {para}=useParams()
   const [data,setData]=useState({})
+  const {total,setTotal}=useContext(AuthContext)
   // const { isOpen, onOpen, onClose } = useDisclosure()
 
  useEffect(()=>{
@@ -20,6 +22,7 @@ function Product(){
   alert("Item added to cart")
    axios.post(`https://lit-crag-43080.herokuapp.com/api/cart`,data)
    .then((res)=>console.log(res.data))
+   setTotal(total=>total+Number(data.price))
    
  }
 

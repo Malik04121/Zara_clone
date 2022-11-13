@@ -1,12 +1,26 @@
 
 
 import "./navbar.css"
-import {Link} from "react-router-dom"
-import { Flex,HStack,Menu,Box,Input,Image,MenuButton,Button } from "@chakra-ui/react"
+import {Link, useNavigate} from "react-router-dom"
+import { Flex,HStack,Menu,Box,Input,Image,MenuButton,Button,Text,Avatar } from "@chakra-ui/react"
+import { useContext, useState } from "react"
+import { AuthContext } from "../Context/AuthContext"
 // import {Link} from "rea"
 
 
 function Navbar(){
+    const {logindata}=useContext(AuthContext)
+     const navigate=useNavigate()
+    const {search,setSearch}=useContext(AuthContext)
+
+    const Searchchange=(e)=>{
+        console.log(e.target.value)
+        navigate("/search")
+        setSearch(e.target.value)
+        // console.log(searchdata,"1")
+
+    }
+    // console.log(searchdata,"2")
 
     return(
         <HStack justify="space-between" alignItems="start" width="100%" p="10px" position="fixed" zIndex={20} top="1px" bg="none" >
@@ -25,10 +39,10 @@ function Navbar(){
                     </Link>
             </Box>
             <Flex gap="30px"  mt="25px">
-               <Input placeholder='search' size='md' border="none" borderBottom="1px solid black" borderRadius={0} fontWeight={400}/>
-               <Link to="/login">Login</Link>
-                <Link to="/help">Help</Link>
-                <Link to="/help">Cart</Link>
+               <Input name="searchdata"  onChange={Searchchange} placeholder='search' size='md' border="none" borderBottom="1px solid black" borderRadius={0} fontWeight={400}/>
+               {logindata.length==0?<Link to="/login">Login</Link>: <Avatar src='https://bit.ly/broken-link'/>}
+                <Link >Help</Link>
+                <Link to="/cart">Cart</Link>
             </Flex>
         </HStack>
         //   <div className="nav_container">

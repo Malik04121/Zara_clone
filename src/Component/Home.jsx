@@ -17,7 +17,19 @@ function Home(){
           return (
             <>
             <div className="homepage">
-               <Carousel activeIndex={index}  onSelect={handleSelect}>
+               <Carousel activeIndex={index} interval={1000} onSelect={handleSelect}>
+               <Carousel.Item>
+               <Link to="/kids">
+               <video width="100%" height='60%' autoPlay="autoPlay" loop={true} muted> <source src="https://static.zara.net/video///mkt/2021/12/aw21-happy-new-year-subhomes/subhome-xmedia-video-52-2/w/1808//large-landscape/subhome-xmedia-video-52-2_0.mp4?ts=1640882484837" type="video/mp4"/></video>
+                <img
+              className="itemimage"
+              src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-girl/subhome-xmedia-44//w/808/IMAGE-portrait-ipad-fill-c1e6f970-86aa-42e2-af45-b607a07f8827-default_0.jpg?ts=1667488811836"
+              alt="First slide"
+            />
+            
+            </Link>
+             
+                </Carousel.Item>
                <Carousel.Item>
                 <Link to="/women"><img
               className="itemimage"
@@ -44,18 +56,7 @@ function Home(){
               alt="First slide"
             /></Link>
                 </Carousel.Item>
-            <Carousel.Item>
-               <Link to="/kids">
-               <video width="100%" height='60%' autoPlay="autoPlay" loop={true} muted> <source src="https://static.zara.net/video///mkt/2021/12/aw21-happy-new-year-subhomes/subhome-xmedia-video-52-2/w/1808//large-landscape/subhome-xmedia-video-52-2_0.mp4?ts=1640882484837" type="video/mp4"/></video>
-                <img
-              className="itemimage"
-              src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-girl/subhome-xmedia-44//w/808/IMAGE-portrait-ipad-fill-c1e6f970-86aa-42e2-af45-b607a07f8827-default_0.jpg?ts=1667488811836"
-              alt="First slide"
-            />
             
-            </Link>
-             
-                </Carousel.Item>
                </Carousel>
 
             </div>

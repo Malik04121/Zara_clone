@@ -4,12 +4,14 @@ import {Box,Text,Input , Button} from "@chakra-ui/react"
 import {useState} from "react"
 import axios from "axios"
 import { useEffect } from "react"
+import { useNavigate } from "react-router-dom"
 
 
 function Signup(){
     const [signupdata,setSignupdata]=useState(
         {"email":"","password":"","name":"","address":"","contact":""})
     const [userdata,setUserdata]=useState([])
+    const navigate=useNavigate()
 
     const getdata=()=>{
         axios.get(`https://lit-crag-43080.herokuapp.com/api/userData`)
@@ -27,6 +29,7 @@ function Signup(){
             id: Date.now()
           }
       })
+      navigate("/login")
     }
 
     const Inputhandler=(e)=>{
