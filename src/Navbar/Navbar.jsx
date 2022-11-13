@@ -35,7 +35,7 @@ function Navbar(){
                   </Menu>
                   <Link to="/">
                         
-                        <Image width="250px" height="140px" src="https://i.ibb.co/16XCqSN/Globalvogue-2.png"/>
+                        <Image width="250px" height="140px" src="https://i.ibb.co/hd0pK9b/Globalvogue-zara-removebg-preview.png" />
                     </Link>
             </Box>
             <Flex gap="30px"  mt="25px">
