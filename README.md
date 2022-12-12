@@ -1,5 +1,5 @@
 # Introduction
-ZARA Fashion is a Clothing website. ZARA Fashion is one of the e-commerce websites working in India. Launched in Galicia, Spain in 1975. ZARA slowly expanded its empire in the rest of the country and later in Portugal in 1988 and the year after that- in 1989 ZARA made it to the United States of America.
+This project is a clone of ZARA.com which is well known online shopping store. The company specializes in fast fashion, and products include clothing, accessories, shoes, beauty products and many more things.
 
 # Let's walk you through some snapshots of the cloned site
 
