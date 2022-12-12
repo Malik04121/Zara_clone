@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Introduction
+ZARA Fashion is a Clothing website. ZARA Fashion is one of the e-commerce websites working in India. Launched in Galicia, Spain in 1975. ZARA slowly expanded its empire in the rest of the country and later in Portugal in 1988 and the year after that- in 1989 ZARA made it to the United States of America.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Let's walk you through some snapshots of the cloned site
 
-## Available Scripts
+# Sign Up Page
+Here the user has to fill all mandatory fields with valid details to create an account. After filling all the fields, if the user clicks on Create Account, the account will be created.
 
-In the project directory, you can run:
+<img src="https://miro.medium.com/max/700/1*6FE0uTNDq25PloltW5qsRQ.png" alt=""/>
 
-### `npm start`
+# Sign in Page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This is Log-in/ sign-in page, where users can enter their account by entering user credentials, if the user gives the wrong user credentials, the alert will be displayed. and if the user doesn't have an account or wanted to create another account he can click on Create Account button, then it will navigate the user to the register / sign-up page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img src="https://miro.medium.com/max/700/1*UDpxsDd6nfEfxll6w0xVdw.png" alt=""/>
 
-### `npm test`
+# HomePage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+On the home page, the big hero picture you can see below represents the particular category type of clothes, similarly, can u see different category types every 2 seconds, since all the category types are kept in 2 seconds time intervals.
 
-### `npm run build`
+<img src="https://miro.medium.com/max/700/1*xPG8J3aPphcTO0RO_mqNgw.png" alt=""/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Navbar
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The blow picture is the navbar, which has 3 sections and in each section, we have multiple categories/subcategories, if we click on any one of them, the user gets navigated to the Product Page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="https://miro.medium.com/max/700/1*9fnK8SSFUyOmZMl0lmNgiQ.png" alt=""/>
 
-### `npm run eject`
+# Product Page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+here on the product page user can go through all the products and if the user wanted to know complete product details or wanted buy he can click on any product, then the user gets redirected to the product details page.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img src="https://miro.medium.com/max/700/1*9FTxmUTr9btfcuEz7n4t2w.png" alt=""/>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Product details page
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+if the user wanted to buy or wanted to add the product to the cart he can click on the “Add to Cart” button. and the count of the cart products will increase, you can see that on the right top page in the Navbar.
 
-## Learn More
+<img src="https://miro.medium.com/max/700/1*tgWYT7SS8QhROh_sBF2JkQ.png" alt=""/>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Cart page
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Finally, the user can order them by clicking the “Continue Payment” button on the bottom right corner of the page.
 
-### Code Splitting
+<img src="https://miro.medium.com/max/700/1*HXZm56hSB0Fglv7iZqQ23w.png" alt=""/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Challengers we faced and how we resolved them
 
-### Analyzing the Bundle Size
+→ React was fairly new to us and thus it became a challenge to merge the code and solve the conflicts.
+→ Another problem was the integration of the front-end and back-end which was a little bit challenging to do but we did that successfully. We tried our best and did the job.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Learning from the Project
 
-### Making a Progressive Web App
+→ In this construct week project, we have used the import-export functionality to export and import the navbar and footer section, it gave the learning to reuse the same code on different pages without complication.
+→ Using the ES6 standards in the code base has optimized our program and made it shorter and more interactive.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Tech stack that we used in this project:-
 
-### Advanced Configuration
+<li>React.js</li>
+<li>Node.js</li>
+<li>Express.js</li>
+<li>MongoDB</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript -ES6</li>
+<li>Git</li>
+<li>Heroku</li>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Conclusion
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+It was a wonderful experience working with the team to make the Clone of the ZARA fashion clothing site, collaboratively we created and made the clone exactly work as the real website works from the home page to the payment successful page. We will work on the project to improve it to add more functionality. In the last, the entire team thanked Masai School for giving us this wonderful opportunity to work on this Project.
