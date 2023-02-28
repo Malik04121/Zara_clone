@@ -9,7 +9,7 @@ function Search(){
   console.log(search)
  
   const searchdata=(search)=>{
-    axios.get(`https://lit-crag-43080.herokuapp.com/api/products?q=${search}`)
+    axios.get(`https://zara-db-backend.onrender.com/products?q=${search}`)
     .then((res)=>setData(res.data))
   } 
 

@@ -10,7 +10,7 @@ function Womenpage(){
 const [data,setData]=useState([])
 
 useEffect(()=>{
-   axios.get(`https://lit-crag-43080.herokuapp.com/api/women`)
+   axios.get(`https://zara-db-backend.onrender.com/women`)
    .then((res)=>setData(res.data))
    console.log(data)
 },[])

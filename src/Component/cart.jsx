@@ -11,7 +11,7 @@ function Cart(){
       const navigate=useNavigate()
 
    const getcartdata=()=>{
-    axios.get(`https://lit-crag-43080.herokuapp.com/api/cart`)
+    axios.get(`https://zara-db-backend.onrender.com/cart`)
     .then((res)=>setCartdata(res.data))
     // {cartdata.map((ele)=>(
     //     setTotal(total=>total+Number(ele.price))

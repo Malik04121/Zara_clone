@@ -17,7 +17,7 @@ function Login(){
     const navigate=useNavigate()
 
     useEffect(()=>{
-    axios.get(`https://lit-crag-43080.herokuapp.com/api/userdata`)
+    axios.get(`https://zara-db-backend.onrender.com/userdata`)
     .then((res)=>setData(res.data))
     },[])
 

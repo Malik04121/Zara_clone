@@ -10,7 +10,7 @@ function Menpage(){
 const [data,setData]=useState([])
 
 useEffect(()=>{
-   axios.get(`https://lit-crag-43080.herokuapp.com/api/men`)
+   axios.get(`https://zara-db-backend.onrender.com/men`)
    .then((res)=>setData(res.data))
    console.log(data)
 },[])

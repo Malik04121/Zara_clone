@@ -10,7 +10,7 @@ function Childpage(){
 const [data,setData]=useState([])
 
 useEffect(()=>{
-   axios.get(`https://lit-crag-43080.herokuapp.com/api/kids`)
+   axios.get(`https://zara-db-backend.onrender.com/kids`)
    .then((res)=>setData(res.data))
    console.log(data)
 },[])

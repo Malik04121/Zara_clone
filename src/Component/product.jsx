@@ -14,13 +14,13 @@ function Product(){
   // const { isOpen, onOpen, onClose } = useDisclosure()
 
  useEffect(()=>{
-     axios.get(`https://lit-crag-43080.herokuapp.com/api/${para}/${id}`)
+     axios.get(`https://zara-db-backend.onrender.com/${para}/${id}`)
      .then((res)=>setData(res.data))
  },[])
 
  const addproduct=()=>{
   alert("Item added to cart")
-   axios.post(`https://lit-crag-43080.herokuapp.com/api/cart`,data)
+   axios.post(`https://zara-db-backend.onrender.com/cart`,data)
    .then((res)=>console.log(res.data))
    setTotal(total=>total+Number(data.price))
    

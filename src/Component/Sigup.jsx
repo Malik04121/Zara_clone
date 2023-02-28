@@ -14,7 +14,7 @@ function Signup(){
     const navigate=useNavigate()
 
     const getdata=()=>{
-        axios.get(`https://lit-crag-43080.herokuapp.com/api/userData`)
+        axios.get(`https://zara-db-backend.onrender.com/userData`)
         .then((res)=>setUserdata(res.data))
     }
     useEffect(()=>{
@@ -22,7 +22,7 @@ function Signup(){
     },[])
 
     const postuserdata=(signupdata)=>{
-        axios(`https://lit-crag-43080.herokuapp.com/api/userData`,{
+        axios(`https://zara-db-backend.onrender.com/userData`,{
         method:"POST",
         data:{
             ...signupdata,
